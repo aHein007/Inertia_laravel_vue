@@ -1,17 +1,29 @@
 <template>
    <nav>
-    <li><Link href="/" class="text-blue-500 hover:text-blue-800">Home</Link></li>
-    <li><Link href="/user" class="text-blue-500 hover:text-blue-800">User</Link></li>
-    <li><Link href="/settings" class="text-blue-500 hover:text-blue-800">Settings</Link></li>
-    <li><Link href="/logout" class="text-blue-500 hover:text-blue-800" method="post" as="button" :data="{food:'hi aung'}">Logout</Link></li>
+    <li>
+        <NavLink href="/" :active="$page.url == '/'">
+           Home
+        </NavLink>
+    </li>
+    <li><Link href="/user?foo==aung" class="text-blue-500 hover:underline" :class="{'font-bold underline':$page.url.startsWith('/user')}">User</Link> <!--startsWith method is use for (when you get random url and to fix with this)-->
+    </li>
+    <li>
+        <NavLink href="/settings" :active="$page.url == '/settings'">
+            Settings
+        </NavLink>
+    </li>
+    <li><Link href="/logout" class="text-blue-500 hover:underline" method="post" as="button" :data="{food:'hi aung'}" :class="{'font-bold underline':$page.url =='/logout'}">Logout</Link>
+    </li>
   </nav>
 </template>
 
 <script>
 import { Link } from '@inertiajs/inertia-vue3';
+import NavLink from '../Share/NavLink.vue';
 export default {
  components:{
-    Link
+    Link,
+    NavLink
  }
 }
 </script>
