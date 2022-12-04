@@ -2,7 +2,8 @@
    <nav>
     <li><Link href="/">Home</Link></li>
     <li><Link href="/user">User</Link></li>
-    <li><Link href="/settings">settings</Link></li>
+    <li><Link href="/settings">Settings</Link></li>
+    <li><Link href="/logout" method="post" as="button" :data="{food:'hi aung'}">Logout</Link></li>
   </nav>
 </template>
 

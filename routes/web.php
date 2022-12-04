@@ -19,11 +19,15 @@ Route::get('/', function () {
 });
 
 Route::get("/user",function(){
-    sleep(1);
+    sleep(2);
     return Inertia::render("User");
 });
 
 
 Route::get("/settings",function(){
     return Inertia::render("Settings");
+});
+
+Route::post("/logout",function(){
+    dd(request('food')); //this is request from Nav.vue page (:data bind method)
 });
