@@ -1,5 +1,5 @@
 <template>
-  <h1>this is setting and you will setting up</h1>
+  <h1 class="text-4xl font-bold">this is setting and you will setting up</h1>
 
   <Nav></Nav>
 </template>
