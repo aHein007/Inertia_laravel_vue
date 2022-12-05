@@ -1,17 +1,18 @@
 <template>
-  <h1 class="text-4xl font-bold">this is setting and you will setting up</h1>
+    <Layouts >
+      <h1 class="text-4xl font-bold">This is Setting Page</h1>
+  </Layouts>
+  </template>
 
-  <Nav></Nav>
-</template>
+  <script>
+  import Layouts from '../Share/Layouts.vue';
+  export default {
+    components: { Layouts},
 
-<script>
-import Nav from '../Share/Nav'
-export default {
-  components: { Nav },
 
-}
-</script>
+  }
+  </script>
 
-<style>
+  <style>
 
-</style>
+  </style>

@@ -1,6 +1,7 @@
 <template>
    <nav>
-    <li>
+    <ul class="flex list-disc space-x-4 list-inside">
+        <li>
         <NavLink href="/" :active="$page.url == '/'">
            Home
         </NavLink>
@@ -14,6 +15,7 @@
     </li>
     <li><Link href="/logout" class="text-blue-500 hover:underline" method="post" as="button" :data="{food:'hi aung'}" :class="{'font-bold underline':$page.url =='/logout'}">Logout</Link>
     </li>
+    </ul>
   </nav>
 </template>
 

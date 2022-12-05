@@ -1,27 +1,15 @@
 <template>
-  <h1 class="text-4xl font-bold">This is user</h1>
-
-  <Nav></Nav>
-
-  <div style="margin-top:600px;" >
-    The current time is {{ time }}
-  </div>
-
-  <Link href="/user" class="text-blue-500 hover:text-blue-800" preserve-scroll> <!--this (preserve-scroll) is for  scroll is not work-->
-    Refresh
-  </Link>
+  <Layouts>
+    <h1 class="text-4xl font-bold">This is User Page</h1>
+</Layouts>
 </template>
 
 <script>
-import Nav from '../Share/Nav'
-import { Link } from '@inertiajs/inertia-vue3';
+import Layouts from '../Share/Layouts.vue';
 export default {
-  components: { Nav,Link },
+  components: { Layouts},
 
-  props:{
-    time:String,
 
-  }
 }
 </script>
 
