@@ -9,15 +9,14 @@
 </template>
 
 <script>
-import { Link } from "@inertiajs/inertia-vue3";
+
 import Layouts from "../Share/Layouts.vue"
 export default {
- components:{
-    Link,
-    Layouts
- },
 
- 
+components:{
+    Layouts
+}
+
 
 
 }
