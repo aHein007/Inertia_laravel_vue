@@ -1,7 +1,7 @@
 <template>
-    <Layouts >
+
       <h1 class="text-4xl font-bold">This is Setting Page</h1>
-  </Layouts>
+
   </template>
 
   <script>
@@ -9,6 +9,7 @@
   export default {
     components: { Layouts},
 
+    layout:Layouts//this methods is when you go to another route is not be refresh
 
   }
   </script>

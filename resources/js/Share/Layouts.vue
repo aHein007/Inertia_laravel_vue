@@ -11,7 +11,12 @@
             <Nav >
             </Nav>
         </div>
+
+
 </header>
+
+
+
    </section>
 
 
@@ -21,6 +26,10 @@
     </div>
 
    </section>
+
+   <section class="mt-6">
+        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/b83b0a3a-c934-480e-af5d-3007fccd57b6?dark=false"></iframe>
+    </section>
 
 </template>
 

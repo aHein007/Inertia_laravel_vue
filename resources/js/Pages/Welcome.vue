@@ -11,12 +11,12 @@
 <script>
 
 import Layouts from "../Share/Layouts.vue"
+
 export default {
 
-components:{
-    Layouts
-}
 
+
+layout:Layouts // this method is use when you want to layout is parent div
 
 
 }
