@@ -8,12 +8,14 @@
 </template>
 
 <script >// this is new setup functihon
-import Layouts from '../Share/Layouts.vue';
+
 export default {
 
 
-    layout:Layouts// this (layout) method is use when you won't  compoent refresh and your nee to (two contact component)
-    
+   // layout:Layouts// this (layout) method is use when you won't  compoent refresh and your nee to (two contact component)
+
+
+   
 }
 
 </script>

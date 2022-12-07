@@ -8,7 +8,7 @@
 
 </template>
 
-<script>
+<!-- <script>
 
 import Layouts from "../Share/Layouts.vue"
 
@@ -16,11 +16,11 @@ export default {
 
 
 
-layout:Layouts // this method is use when you want to layout is parent div
+//layout:Layouts // this method is use when you want to layout is parent div
 
 
 }
-</script>
+</script> -->
 
 <style>
 
