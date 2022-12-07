@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .extract() //if you want to extract method you nee to push (three js file (npx mix)) and script in views/app.blade.php
     .vue(3)
     .postCss('resources/css/app.css', 'public/css', [
 
